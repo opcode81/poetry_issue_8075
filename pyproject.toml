@@ -1,0 +1,14 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "poetrybug"
+description = "Poetry bug analysis"
+version = "0.1.0"
+packages = [{ include = "*", from = "src" }]
+authors = ["nobody"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+tianshou = { git = "https://github.com/thu-ml/tianshou.git", rev = "9b6cb6903eddb529437f949b76ffa87a9b9115e9" }
