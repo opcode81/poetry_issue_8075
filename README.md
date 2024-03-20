@@ -1,4 +1,4 @@
-# Poetry Bug Reproduction for Issue #TODO
+# Poetry Bug Reproduction for Issue #9075
 
 Steps to reproduce (tested under Ubuntu):
 
@@ -33,6 +33,7 @@ Steps to reproduce (tested under Ubuntu):
         rm poetry.lock
         poetry install
 
+    (Removing the lock file probably isn't necessary.)
     Then in Python:
 
         >>> from tianshou.highlevel.env import EnvMode
